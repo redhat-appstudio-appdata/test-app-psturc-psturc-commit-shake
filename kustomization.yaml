@@ -1,0 +1,4 @@
+bases:
+- components/1-python/base
+resources:
+- common-storage-pvc.yaml

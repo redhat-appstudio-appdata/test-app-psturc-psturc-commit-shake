@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: 1-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: 1-python
+    app.kubernetes.io/part-of: test-app-psturc
+  name: 1-python
+  namespace: psturc
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: 1-python
+status:
+  loadBalancer: {}
