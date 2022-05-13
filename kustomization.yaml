@@ -1,5 +1,6 @@
 bases:
 - components/1-python/base
+- components/basic-python/base
 - components/basic-quarkus/base
 - components/basic-spring-boot/base
 resources:
